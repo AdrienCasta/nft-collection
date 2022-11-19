@@ -5,6 +5,8 @@ require("dotenv").config();
 const QUICKNODE_HTTP_URL = process.env.QUICKNODE_HTTP_URL;
 const GOERLI_PRIVATE_KEY = process.env.GOERLI_PRIVATE_KEY as string;
 
+console.log({ QUICKNODE_HTTP_URL, GOERLI_PRIVATE_KEY });
+
 const config: HardhatUserConfig = {
   solidity: "0.8.17",
   networks: {
